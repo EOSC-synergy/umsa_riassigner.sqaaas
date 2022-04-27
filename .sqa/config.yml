@@ -15,6 +15,12 @@ sqa_criteria:
     repos:
       github.com/RECETOX/RIAssigner flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-amber-eleuth.sh
-        container: qc.sty_lovely-carmine-bat
+        - /usr/bin/env sh .sqa/script.clammy-pear-greyhound.sh
+        container: qc.sty_foggy-platinum-ragdoll
+  QC.Uni:
+    repos:
+      github.com/RECETOX/RIAssigner commands:
+        commands:
+        - /usr/bin/env sh .sqa/script.lovely-crimson-coyote.sh
+        container: pytest-service
 timeout: 600

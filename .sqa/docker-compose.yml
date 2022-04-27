@@ -1,5 +1,13 @@
 services:
-  qc.sty_lovely-carmine-bat:
+  pytest-service:
+    command: sleep 6000000
+    image: databricksdocs/pytest:v0.2.0
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.sty_foggy-platinum-ragdoll:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
